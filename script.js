@@ -8,7 +8,6 @@ let cart = [];
 
 // Function to add an item to the cart
 function addToCart(item) {
-  const existingItem = cart.find(cartItem => cartItem.name === item.name);
     cart.push({...item, quantity: 1});
   updateCartDisplay();
 }
